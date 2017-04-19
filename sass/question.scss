@@ -40,9 +40,11 @@
         background: transparent;
         color: $white;
       }
-      &:hover {
-        background: $white;
-        color: $black;
+      @media screen and (min-width: 420px) {
+        &:hover {
+          background: $white;
+          color: $black;
+        }
       }
     }
   }
