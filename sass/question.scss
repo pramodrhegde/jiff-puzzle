@@ -37,6 +37,8 @@
       cursor: pointer;
       &:focus {
         outline: none;
+        background: transparent;
+        color: $white;
       }
       &:hover {
         background: $white;
