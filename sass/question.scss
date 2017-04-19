@@ -1,0 +1,68 @@
+@import 'variables';
+
+.questions-container {
+  margin: 15px 0 0;
+
+  .question {
+    margin-bottom: 15px;
+  }
+
+  .options {
+    li {
+      margin-bottom: 10px;
+      font-size: 15px;
+    }
+  }
+}
+.controls-container {
+  position: fixed;
+  width: 100%;
+  bottom: 30px;
+  left: 0;
+  text-align: center;
+  padding: 15px 0;
+
+  li {
+    display: inline-block;
+
+    button {
+      width: $button-width-sm;
+      height: $button-height-sm;
+      border: 2px solid $white;
+      background: transparent;
+      color: $white;
+      font-size: 18px;
+      font-weight: bold;
+      margin: 0 5px;
+      cursor: pointer;
+      &:focus {
+        outline: none;
+      }
+      &:hover {
+        background: $white;
+        color: $black;
+      }
+    }
+  }
+
+  @media screen and (min-width: 960px) {
+    bottom: 50px;
+    li {
+      button {
+        width: $button-width-md;
+        height: $button-height-md;
+      }
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    bottom: 80px;
+    li {
+      button {
+        width: $button-width-lg;
+        height: $button-height-lg;
+      }
+    }
+  }
+
+}

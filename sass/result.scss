@@ -1,0 +1,64 @@
+@import 'variables';
+
+.text-center, .rd3-basic-chart {
+  text-align: center;
+}
+
+.chart-indicators {
+  margin-bottom: 10px;
+
+  span:nth-child(1), span:nth-child(2) {
+    display: inline-block;
+    padding-left: 20px;
+    position: relative;
+    margin: 0px 10px;
+
+    &:before {
+      content: '';
+      display: inline-block;
+      width: 15px;
+      height: 15px;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      margin-top: -7px
+    }
+  }
+  span:nth-child(1):before {
+    background: $chart-yellow;
+  }
+  span:nth-child(2):before {
+    background: $chart-red;
+  }
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+hr {
+  width: 45%;
+  margin: 5px auto;
+}
+
+a {
+  display: inline-block;
+  color: $white;
+  font-size: 18px;
+  margin: 15px 0 0;
+  padding: 5px 20px;
+  border: 2px solid $white;
+
+  text-decoration: none;
+}
+
+svg.rd3-chart {
+  box-shadow: 0 5px 10px $gradient-color3;
+  border-radius: 50%;
+}
+g.rd3-piechart-arc:nth-child(1) path{
+  fill: $chart-red;
+}
+g.rd3-piechart-arc:nth-child(2) path{
+  fill: $chart-yellow;
+}
