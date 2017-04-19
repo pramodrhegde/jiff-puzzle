@@ -37,8 +37,6 @@
       cursor: pointer;
       &:focus {
         outline: none;
-        background: transparent;
-        color: $white;
       }
       @media screen and (min-width: 420px) {
         &:hover {
