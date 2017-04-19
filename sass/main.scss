@@ -11,7 +11,6 @@ html,body {
 }
 
 body {
-  overflow: hidden;
   border: $border-width-sm solid $border-color;
 
   background: -webkit-radial-gradient($gradient-color1 30%, $gradient-color2, $gradient-color3); /* Safari 5.1 to 6.0 */
@@ -51,6 +50,8 @@ ul {
 
 #main {
   min-height: 100%;
+  max-height: 100%;
+  overflow: auto;
 }
 
 .container {
@@ -58,7 +59,6 @@ ul {
   max-width: 1200px;
   margin: 25px auto;
   padding: 15px 15px;
-  overflow: auto;
 
   > p {
     font-size: 12px;
