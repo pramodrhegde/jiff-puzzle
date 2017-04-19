@@ -21,7 +21,7 @@ export default class ResultsComponent extends React.Component {
     let correctAnswers = this.state.correctAnswers;
 
     results.map((question, i) => {
-      if(question.choice && question.choice === question.answer) {
+      if(question.choice !== undefined && question.choice === question.answer) {
         correctAnswers++;
       }
     });
